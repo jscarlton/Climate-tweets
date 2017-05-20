@@ -40,6 +40,6 @@ ggplot(frequency, aes(x = cc, y = gw, color = abs(gw - cc))) +
 
 
 # save
-freq_path <- paste0(gsub(pattern = "(./)data(.+).+csv", "\\1graphs\\2", frequency_file),"-freq.png")
+freq_path <- paste0(gsub(pattern = "(./)data(.+).+csv", "\\1graphs\\2", frequency_file),"-freq_comp.png")
 
 ggsave(filename = freq_path, width = 10, height = 10)
