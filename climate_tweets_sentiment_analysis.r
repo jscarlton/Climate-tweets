@@ -48,7 +48,7 @@ bing_word_counts %>%
 
 ggsave("./graphs/most_common_sentiments.png")
 
-png("./graphs/sentiment_comparisoncloud.png", width = 8, height = 8, units = "in", res = 300)
+png("./graphs/sentiment_comparisoncloud.png", width = 7, height = 7, units = "in", res = 300)
 sentiment_tweets_tidy %>%  
   inner_join(get_sentiments("bing")) %>%
   filter(word != "trump" & word != "like") %>%
