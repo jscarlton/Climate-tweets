@@ -5,3 +5,4 @@
 
 *.csv
 .httr-oauth
+blog post/*
